@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  /* system font stack */
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+::selection {
+  color: white;
+  background-color: #1976d2;
+}
+
+header {
+  text-align: right;
+  animation: fade-in 1.3s backwards;
+}
+
+/* fancy border */
+header h1,
+header a {
+  display: block;
+  padding-right: 1.5rem;
+  margin-right: 1.5rem;
+  border-right: 0.25rem solid #1976d2;
+}
+
+nav a {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+nav a:hover,
+nav a:active {
+  border-color: #f4511e;
+}
+
+main {
+  width: 35vw;
+  animation: fade-in 1.1s 0.2s backwards;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: "Fira Code", Consolas, "Courier New", Courier, monospace;
+  font-weight: normal;
+  /* style to be 'square' */
+  line-height: 1;
+  letter-spacing: -0.15rem;
+}
+
+p {
+  font-size: 1.45rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  /* fade on hover */
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+}
+
+a:hover,
+a:active {
+  color: #f4511e;
+}
+
+.pop {
+  color: #1976d2;
+}
+
+/* tablets / smaller laptops */
+@media only screen and (max-width: 1199px) {
+  main {
+    width: 50vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  header h1,
+  header a {
+    border-width: 0.2rem;
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 767px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header {
+    text-align: left;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  nav a {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    width: 90vw;
+  }
+}
+
+/* fade animation for load */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
