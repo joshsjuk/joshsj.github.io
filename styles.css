@@ -45,7 +45,7 @@ nav {
 }
 
 nav a {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   margin-top: 1.5rem;
 }
 
@@ -83,7 +83,7 @@ a {
   text-decoration: none;
   /* fade on hover */
   transition-property: color, border-color;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 a:hover,
@@ -98,16 +98,16 @@ a:active {
 /* tablets / smaller laptops */
 @media only screen and (max-width: 1199px) {
   main {
-    width: 40vw;
+    width: 45vw;
   }
 
   h1 {
     font-size: 3rem;
   }
 
-  p {
-    font-size: 1.5rem;
-    line-height: 1.4;
+  p,
+  nav a {
+    font-size: 1.6rem;
   }
 
   header h1,
@@ -142,6 +142,10 @@ a:active {
 
   main {
     width: 90vw;
+  }
+
+  p {
+    line-height: 1.5;
   }
 }
 
