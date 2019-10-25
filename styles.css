@@ -14,7 +14,7 @@ body {
     "Segoe UI Symbol";
   color: #333333;
   background-color: #f9f9f9;
-  padding: 4rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -105,11 +105,6 @@ a:active {
     font-size: 3rem;
   }
 
-  p,
-  nav a {
-    font-size: 1.6rem;
-  }
-
   header h1,
   header a {
     border-width: 0.2rem;
@@ -126,7 +121,7 @@ a:active {
 
   header {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   nav {
@@ -144,6 +139,10 @@ a:active {
     width: 90vw;
   }
 
+  p,
+  nav a {
+    font-size: 1.35rem;
+  }
   p {
     line-height: 1.5;
   }
