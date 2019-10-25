@@ -22,7 +22,7 @@ body {
 
 ::selection {
   color: white;
-  background-color: #1976d2;
+  background-color: #1e88e5;
 }
 
 header {
@@ -34,7 +34,7 @@ header h1,
 header a {
   padding-right: 1.5rem;
   margin-right: 1.5rem;
-  border-right: 0.25rem solid #1976d2;
+  border-right: 0.25rem solid #1e88e5;
 }
 
 nav {
@@ -79,7 +79,7 @@ p:last-child {
 }
 
 a {
-  color: #1976d2;
+  color: #1e88e5;
   text-decoration: none;
   /* fade on hover */
   transition-property: color, border-color;
@@ -92,7 +92,7 @@ a:active {
 }
 
 .pop {
-  color: #1976d2;
+  color: #1e88e5;
 }
 
 /* tablets / smaller laptops */
@@ -145,6 +145,13 @@ a:active {
   }
   p {
     line-height: 1.5;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e0e0e0;
+    background-color: #202124;
   }
 }
 
