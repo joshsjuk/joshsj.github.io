@@ -95,6 +95,12 @@ a:active {
   color: #1e88e5;
 }
 
+#thumb {
+  /* align bottom of thumb with bottom of text */
+  position: relative;
+  bottom: 0.2rem;
+}
+
 /* tablets / smaller laptops */
 @media only screen and (max-width: 1199px) {
   main {
