@@ -1,0 +1,95 @@
+@import "./fonts/inconsolata.css";
+
+* {
+  /* reset */
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  /* clean font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* border: 1px red solid; */
+}
+
+body {
+  font-family: Inconsolata, monospace;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  display: flex;
+
+  color: #3a3a3a;
+  background-color: #fafafa;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  color: currentColor;
+}
+
+header,
+main {
+  /* keeps scrollbar fullscreen */
+  padding-top: 3rem;
+}
+
+header {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+main {
+  /* subtract spacing */
+  height: calc(100% - 3rem);
+
+  /* scroll within container */
+  overflow-y: auto;
+
+  /* max width  */
+  flex-grow: 1;
+}
+
+#main-content {
+  width: 40rem;
+}
+
+#main-content > h2 {
+  margin-bottom: 1rem;
+}
+
+#main-content > p {
+  margin-bottom: 2rem;
+}
+
+#name {
+  /* tighter spacing for square-ish box */
+  line-height: 0.9;
+  font-size: 4.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link > .icon {
+  margin-right: 0.5em;
+}
+
+.contact-link + .contact-link {
+  margin-top: 1rem;
+}
+
+.icon {
+  height: 1.75rem;
+}
