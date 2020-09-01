@@ -16,7 +16,7 @@
 body {
   font-family: Inconsolata, monospace;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 
   display: flex;
 
@@ -25,7 +25,7 @@ body {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
 
 p {
@@ -59,7 +59,7 @@ main {
 }
 
 #main-content {
-  width: 40rem;
+  max-width: 40rem;
 }
 
 #main-content > h2 {
@@ -91,5 +91,21 @@ main {
 }
 
 .icon {
-  height: 1.75rem;
+  height: 2rem;
+}
+
+/* smaller screens */
+@media only screen and (max-width: 1199px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  header {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  #main-content {
+    max-width: 35rem;
+  }
 }
