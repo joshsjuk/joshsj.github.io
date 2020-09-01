@@ -25,7 +25,7 @@ body {
 }
 
 h2 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 }
 
 p {
@@ -101,11 +101,47 @@ main {
   }
 
   header {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  #name {
+    font-size: 3.75rem;
   }
 
   #main-content {
-    max-width: 35rem;
+    max-width: 27.5rem;
+  }
+}
+
+/* phones */
+@media only screen and (max-width: 767px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header,
+  main {
+    padding-top: 0;
+  }
+
+  header {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    height: unset;
+    width: 90%;
+  }
+
+  #name {
+    margin-bottom: 2.5rem;
   }
 }
